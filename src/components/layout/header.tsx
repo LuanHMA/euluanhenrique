@@ -23,7 +23,7 @@ export function Header() {
     }, [])
     
     return (
-        <header className={`fixed top-0 h-20 grid place-items-center left-1/2 -translate-x-1/2 z-50 w-full transition-all ${isScrolling ? "bg-neutral-900/20 backdrop-blur" : "bg-transparent"}`}>
+        <header className={`fixed top-0 h-16 grid place-items-center  left-1/2 -translate-x-1/2 z-50 w-full transition-all ${isScrolling ? "bg-neutral-900/20 backdrop-blur" : "bg-transparent"}`}>
             <div className="flex items-center justify-between gap-4 w-full px-6 max-w-7xl">
                 <motion.div initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: 1.5 }}>
                     <h1 className="sr-only">Luan Henrique</h1>
