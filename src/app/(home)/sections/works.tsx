@@ -10,7 +10,7 @@ export function MyWorksSection() {
   const [activeProject, setActiveProject] = useState(0)
 
   return (
-    <section className="min-h-screen relative text-neutral-50 bg-neutral-950 max-w-6xl mx-auto px-5 grid place-items-center py-10 sm:px-6 lg:px-8 lg:pb-20">
+    <section className="min-h-screen relative text-neutral-50 bg-neutral-950 max-w-6xl mx-auto px-5 grid place-items-center py-10 sm:px-6 lg:px-8 lg:pb-44">
       <div className="w-full max-w-6xl grid gap-20 relative z-20">
         <div className="flex items-start flex-col gap-1 sm:items-center">
           <h1 className="text-3xl text-neutral-50 text-left sm:text-4xl sm:text-center">Meus Trabalhos</h1>
@@ -27,7 +27,7 @@ export function MyWorksSection() {
                 className="flex flex-wrap items-start gap-10 w-full lg:flex-row lg:flex-nowrap"
                 initial={{ opacity: 0, y: 50, scale: 0.8 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, amount: 1 }}
+                viewport={{ once: true, amount:1 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 onViewportEnter={() => {
                   if (window.innerWidth >= 1024) {
@@ -35,7 +35,7 @@ export function MyWorksSection() {
                   }
                 }}
               >
-                <div className="rounded-xl h-72 lg:h-[450px] w-full group overflow-hidden gap-3 relative border-2 border-neutral-800 p-2 bg-neutral-900 lg:my-4">
+                <div className="rounded-xl h-72 lg:h-[400px] w-full group overflow-hidden gap-3 relative border-2 border-neutral-800 p-2 bg-neutral-900 lg:my-4">
                   <div
                     className={`flex flex-col items-center justify-center bg-gradient-to-b overflow-hidden relative rounded-xl ${project.style.gradient} w-full h-full`}
                   >
@@ -44,7 +44,7 @@ export function MyWorksSection() {
                       alt={project.title}
                       width={500}
                       height={500}
-                      className="rounded-md absolute -bottom-4 group-hover:rotate-3 group-hover:scale-105 transition-all shadow-lg shadow-blue-400 w-11/12 h-full"
+                      className="rounded-md absolute -bottom-4 group-hover:rotate-3 group-hover:scale-105 transition-all shadow-lg shadow-blue-400 w-full max-w-[85%] h-auto object-cover"
                     />
                   </div>
                 </div>
@@ -76,7 +76,7 @@ export function MyWorksSection() {
           </div>
 
           <div
-            className="gap-2 sticky top-80 mt-6 hidden lg:flex lg:flex-col lg:items-start lg:w-[40%]"
+            className="gap-2 sticky top-72 mt-6 hidden lg:flex lg:flex-col lg:items-start lg:w-[40%]"
           >
             <div className="flex items-center gap-3">
               <div className={`w-6 h-1 ${projects[activeProject].style.bg} rounded-lg`} />
@@ -85,25 +85,6 @@ export function MyWorksSection() {
 
             <div className="sm:ml-8 space-y-4">
               <p className="text-neutral-400">{projects[activeProject].description}</p>
-
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2 text-sm">
-                  <StarFourIcon weight="fill" size={14} className={`${projects[activeProject].style.text}`} />
-                  Layout 100% responsivo com foco em conversão.
-                </li>
-                <li className="flex items-center gap-2 text-sm">
-                  <StarFourIcon weight="fill" size={14} className={`${projects[activeProject].style.text}`} />
-                  Integração com ferramentas de marketing (landing pages, captura de leads, extensões).
-                </li>
-                <li className="flex items-center gap-2 text-sm">
-                  <StarFourIcon weight="fill" size={14} className={`${projects[activeProject].style.text}`} />
-                  Estrutura otimizada para SEO e carregamento rápido.
-                </li>
-                <li className="flex items-center gap-2 text-sm">
-                  <StarFourIcon weight="fill" size={14} className={`${projects[activeProject].style.text}`} />
-                  Estilo visual moderno e alinhado com o público do marketing digital.
-                </li>
-              </ul>
 
               <div
 
