@@ -41,13 +41,13 @@ export function MyWorksSection() {
   }, [])
 
   return (
-    <section className="min-h-screen relative text-neutral-50 bg-neutral-950 max-w-6xl mx-auto px-5 grid place-items-center py-10 sm:px-6 lg:px-8 lg:pb-44">
+    <section className="min-h-screen relative text-neutral-50 bg-neutral-950 max-w-6xl mx-auto px-5 grid place-items-center py-10 sm:px-6 lg:px-8 lg:pb-24">
       <div className="w-full max-w-6xl grid gap-20 relative z-20">
         {/* Título */}
         <div className="flex items-start flex-col gap-1 sm:items-center">
-          <h1 className="text-3xl text-neutral-50 text-left sm:text-4xl sm:text-center">Meus Trabalhos</h1>
+          <h1 className="text-3xl text-neutral-50 text-left font-semibold  sm:text-4xl sm:text-center lg:text-5xl">Meus Trabalhos</h1>
           <p className="text-neutral-400 text-base text-left sm:text-center">
-            Conheça alguns projetos que já desenvolvi ou participei do desenvolvimento!
+            Projetos que já desenvolvi ou participei do desenvolvimento!
           </p>
         </div>
 
@@ -120,6 +120,27 @@ export function MyWorksSection() {
             </div>
           </div>
         </div>
+
+        <motion.a
+          href="https://github.com/LuanHMA?tab=repositories"
+          target="_blank"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="relative mx-auto overflow-hidden group w-52 flex items-center cursor-pointer gap-2 text-white bg-white/10 px-6 py-3 rounded-full backdrop-blur-sm border border-white/10 hover:border-neutral-500 transition-all duration-300 ease-in-out"
+        >
+          <span
+            className="absolute top-0 rotate-45 left-[-100%] w-full h-full bg-white/20 bg-radial blur from-bg-white/20 to-transparent group-hover:left-full transition-all duration-1200 ease-in-out "
+            aria-hidden="true"
+          />
+
+          <span className="relative z-10 flex items-center">
+            Ver mais projetos
+            <ArrowRightIcon size={20} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+          </span>
+        </motion.a>
+
       </div>
     </section>
   )

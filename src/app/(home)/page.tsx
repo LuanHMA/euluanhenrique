@@ -3,6 +3,7 @@ import { HeroSection } from "./sections/hero";
 import { AboutMeSection } from "./sections/about-me";
 import { MyWorksSection } from "./sections/works";
 import { OfferSection } from "./sections/offer";
+import { MySkillsSection } from "./sections/my-skills";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,8 @@ export default function HomePage() {
         <HeroSection/>
         <OfferSection/>
         <MyWorksSection/>
+        <MySkillsSection/>
+        <AboutMeSection/>
       </main>
     </div>
   );
