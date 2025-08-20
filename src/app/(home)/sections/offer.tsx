@@ -58,7 +58,7 @@ export function OfferSection() {
                     <p className="text-neutral-400 text-base">Algumas soluções que eu ofereço para o seu projeto!</p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {offers.map(({ Icon, description, title }, index) => (
                         <SpotlightCard className="rounded-xl flex flex-col gap-3 bg-neutral-900" key={index}>
                             <div className="flex items-center gap-2">
