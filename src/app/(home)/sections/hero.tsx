@@ -10,7 +10,7 @@ export function HeroSection() {
 
   return (
     <>
-      <section className="min-h-screen relative grid place-items-center bg-neutral-950 mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="min-h-screen relative grid place-items-center bg-neutral-950 mx-auto px-4 sm:px-6 lg:px-8" id="hero">
         <div className="absolute h-44 w-full"/>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.3 }} transition={{ duration: 2, delay: 1.8 }} className="absolute inset-0 w-full h-full z-20">
           <Beams

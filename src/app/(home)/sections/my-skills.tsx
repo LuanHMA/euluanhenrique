@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 export function MySkillsSection() {
   return (
-    <section className="relative text-neutral-50 bg-gradient-to-t from-neutral-900 to-neutral-950 mx-auto px-5 grid place-items-center py-10 sm:px-6 lg:px-8 sm:py-24">
+    <section className="relative text-neutral-50 bg-gradient-to-t from-neutral-900 to-neutral-950 mx-auto px-5 grid place-items-center py-10 sm:px-6 lg:px-8 sm:py-24" id="skills">
       <div className="w-full max-w-6xl grid gap-14 relative z-20">
         <div className="flex items-start flex-col gap-1 sm:items-center">
           <h1 className="text-3xl text-neutral-50 text-left font-semibold  sm:text-4xl sm:text-center lg:text-5xl">Meu kit de sobrevivência</h1>

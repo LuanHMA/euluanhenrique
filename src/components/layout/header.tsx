@@ -21,6 +21,8 @@ export function Header() {
             }
         })
     }, [])
+
+
     
     return (
         <header className={`fixed top-0 h-16 grid place-items-center  left-1/2 -translate-x-1/2 z-50 w-full transition-all ${isScrolling ? "bg-neutral-900/20 backdrop-blur" : "bg-transparent"}`}>

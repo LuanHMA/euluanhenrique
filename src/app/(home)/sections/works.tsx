@@ -41,7 +41,7 @@ export function MyWorksSection() {
   }, [])
 
   return (
-    <section className="min-h-screen relative text-neutral-50 bg-neutral-950 max-w-6xl mx-auto px-5 grid place-items-center py-10 sm:px-6 lg:px-8 lg:pb-24">
+    <section className="min-h-screen relative text-neutral-50 bg-neutral-950 max-w-6xl mx-auto px-5 grid place-items-center py-10 sm:px-6 lg:px-8 lg:pb-24" id="projects">
       <div className="w-full max-w-6xl grid gap-20 relative z-20">
         {/* Título */}
         <div className="flex items-start flex-col gap-1 sm:items-center">
